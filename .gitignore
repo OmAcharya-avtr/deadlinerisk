@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+dist/
+build/
+
+# Data and models — regeneration scripts are committed instead
+*.ckpt
+*.pt
+*.pth
+*.onnx
+data/raw/
+models/checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and temp
+*.log
+tmp/
+
+# The campaign log is evidence, not a log file: it carries the warm-up, the
+# calibration history, the probe table and the per-run completion lines in the
+# order they happened. The bare *.log above matches at any depth, so this
+# negation is required for it to reach a cold clone.
+!/data/traces/campaign.log

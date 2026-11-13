@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "DeadlineRisk"
+abstract: ""Deadline-miss probability for a hard-real-time autonomy loop running on the real board under co-resident contention, against the mean-plus-margin rule that understates the tail, with the understatement as the headline output. Baseline 1 mean execution time plus a fixed sigma margin, implemented deliberately as the thing being refuted because it is what the practice does; baseline 2 an extreme-value fit, generalised Pareto over the measured peaks-over-threshold tail, giving the miss probability in closed form with a declared threshold-choice diagnostic; baseline 3 ground truth the directly counted miss rate over a long measured run with a bootstrap confidence interval that accounts for serial dependence between consecutive deadlines. Learned contention-aware predictor mapping co-resident workload descriptors to a miss probability, scored on held-out WORKLOAD MIXES and held-out TIME separately, with the expected result that the EVT fit is competitive and any learned margin is smaller than the bootstrap interval on the counted reference. WHAT IT DOES THAT EXISTING TOOLS DO NOT: WCET analysers bound a single task on an idle processor and real-time tracers report observed maxima; neither produces a miss PROBABILITY with an interval under a named contention mix, which is the number a mission actually needs.""
+type: software
+authors:
+  - family-names: "Acharya"
+    given-names: "Om"
+    alias: "OmAcharya-avtr"
+repository-code: "https://github.com/OmAcharya-avtr/deadlinerisk"
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-08-30"
+keywords:
+  - aerospace
+  - autonomous-aerospace-systems
